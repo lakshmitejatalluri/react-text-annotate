@@ -8,13 +8,13 @@ const Split = props => {
   if (props.mark) return <Mark {...props} />
 
   return (
-    <span
+    <div
       data-start={props.start}
       data-end={props.end}
       onClick={() => props.onClick({start: props.start, end: props.end})}
     >
       {props.content}
-    </span>
+    </div>
   )
 }
 
